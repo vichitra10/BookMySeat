@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+  margin: 20px;
+}
+
+.reservation-form {
+  margin-bottom: 20px; /* Space below the input form */
+}
+
+.seats-container {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  align-items: center; /* Center align rows */
+}
+
+.seat-row {
+  display: flex; /* Align seats in a row */
+  justify-content: center; /* Center the seats */
+  margin: 5px 0; /* Space between rows */
+}
+
+.seat {
+  width: 50px; /* Width of each seat */
+  height: 50px; /* Height of each seat */
+  margin: 0 5px; /* Space between seats */
+  display: flex; /* Center the seat number */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc; /* Border for seat */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.seat.available {
+  background-color: green; /* Available seats color */
+  color: white; /* Text color */
+}
+
+.seat.booked {
+  background-color: red; /* Booked seats color */
+  color: white; /* Text color */
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+}
+
+.seats-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.seats-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.book-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.book-button:active {
+  transform: scale(0.95);
+}
+
